@@ -4,21 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Survey Form</title>
 </head>
 
-<body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description"></p>
-    <form action="" id="survey-form">
-        <label for="name" id="name-label">Name:</label>
-        <input type="text" name="name" id="name" placeholder="Enter your name" required>
-        <label for="email" id="email-label">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
-        <label for="number" id="number-label">Number:</label>
-        <input type="number" name="age" id="number" required min="1" max="100">
-        <input type="submit" value="Submit">
-    </form>
+<body class="bg-light py-5">
+    <div class="container w-50">
+        <form class="form-signin" action="" id="survey-form">
+            <div class="text-center mb-4">
+                <h1 class="h3 mb-3 font-weight-normal" id="title">Survey Form</h1>
+                <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    praesentium harum, quod
+                    voluptate aliquid mollitia, impedit suscipit aperiam quas numquam consectetur voluptates repellendus
+                    eum
+                    doloremque nam qui explicabo aspernatur inventore.</p>
+            </div>
+            <div class="form-label-group">
+                <label for="name" id="name-label">Name:</label>
+                <input class="form-control mb-4" type="text" name="name" id="name" placeholder="Enter your name"
+                    required>
+            </div>
+            <div class="form-label-group">
+                <label for="email" id="email-label">Email:</label>
+                <input class="form-control mb-4" type="email" name="email" id="email" placeholder="Enter your Email"
+                    required>
+            </div>
+            <div class="form-label-group">
+                <label for="number" id="number-label">Number:</label>
+                <input class="form-control mb-4" type="number" name="age" id="number" required min="1" max="100"
+                    placeholder="Choose a number">
+            </div>
+            <div class="form-label-group">
+
+                <label for="dropdown">Workout select:</label>
+                <select class="form-control mb-4" name="workouts" id="dropdown">
+                    <option value="">--Please choose an option--</option>
+                    <option value="planche">Planche</option>
+                    <option value="pullup">Pullups</option>
+                    <option value="dips">Dips</option>
+                </select>
+            </div>
+            <div class="form-label-group">
+                <input type="radio" name="muscles" id="legs" value="legs">
+                <label for="legs">Legs</label>
+                <input type="radio" name="muscles" id="back" value="back">
+                <label for="legs">Back</label>
+                <input type="radio" name="muscles" id="shoulders" value="shoulders">
+                <label for="legs">Shoulders</label>
+            </div>
+            <div class="checkbox mb-3">
+                <input type="checkbox" name="program" id="program" value="program">
+                <label for="program">Program</label>
+                <input type="checkbox" name="routine" id="routine" value="routine">
+                <label for="routine">Routine</label>
+                <input type="checkbox" name="workout" id="workout" value="workout">
+                <label for="workout">Workout</label>
+            </div>
+            <div class="form-label-group">
+                <textarea class="form-control mb-4" name="Fild" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" id="submit">Submit</button>
+        </form>
+    </div>
 
 </body>
 
